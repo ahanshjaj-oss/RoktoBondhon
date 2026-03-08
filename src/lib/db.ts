@@ -180,9 +180,7 @@ export async function runMigration(): Promise<void> {
     await sql`
       INSERT INTO settings (key, value)
       VALUES (${key}, ${value})
-      ON CONFLICT (key) DO UPDATE
-        SET value = EXCLUDED.value
-        WHERE settings.value = '' OR settings.value IS NULL
+      ON CONFLICT (key) DO NOTHING
     `;
   }
 

@@ -218,7 +218,7 @@ export default function DonorSearch({
                     )}
                     {settings.show_whatsapp_btn === "true" && (
                       <a
-                        href={`https://wa.me/${donor.phone.replace(/\D/g, "")}`}
+                        href={`https://wa.me/880${donor.phone.replace(/\D/g, "").replace(/^880/, "").replace(/^0/, "")}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-sm font-medium bg-green-600 text-white transition-opacity hover:opacity-90"
