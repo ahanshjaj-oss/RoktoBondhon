@@ -115,6 +115,13 @@ function Navbar({
               className="px-3 py-1.5 rounded-lg text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
             >
               রক্ত চান
+              <a 
+  href="tel:+8801403520600" 
+  className="px-3 py-1.5 rounded-lg text-sm font-medium bg-red-600 text-white flex items-center gap-2"
+  style={{ marginLeft: '10px' }}
+>
+   📞 ইমারজেন্সি কল
+</a>
             </a>
           </div>
 
