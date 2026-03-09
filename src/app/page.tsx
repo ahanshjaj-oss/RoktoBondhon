@@ -116,13 +116,6 @@ function Navbar({
             >
               রক্ত চান
               <a 
-  href="tel:+8801403520600" 
-  className="px-3 py-1.5 rounded-lg text-sm font-medium bg-red-600 text-white flex items-center gap-2"
-  style={{ marginLeft: '10px' }}
->
-   📞 ইমারজেন্সি কল
-</a>
-            </a>
           </div>
 
           {/* Right side */}
@@ -187,6 +180,21 @@ function Hero({ settings }: { settings: SettingsMap }) {
             <Phone className="w-5 h-5" />
             {settings.hero_btn2_label}
           </a>
+          <button 
+  onClick={() => {
+    const list = [
+      "১. তানভীর : +8801403520600",
+      "২. রাহুল  : +8801737292829",
+      "৩. রুহান  : +8801734971527",
+      "৪. জরুরি সেবা: 01761427351"
+    ];
+    alert("জরুরি প্রয়োজনে কল করুন:\n\n" + list.join("\n"));
+  }}
+  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-red-600 text-white font-bold hover:bg-red-700 transition-all shadow-lg w-full sm:w-auto"
+>
+  📞 ইমারজেন্সি কল
+</button>
+
         </div>
       </div>
     </section>
