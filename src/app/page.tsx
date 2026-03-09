@@ -179,11 +179,10 @@ function Hero({ settings }: { settings: SettingsMap }) {
           >
             <Phone className="w-5 h-5" />
             {settings.hero_btn2_label}
-          </a>
-          <button 
+          </a> <button 
   onClick={() => {
     const list = [
-      "১. তানভীর : +8801403520600" ,
+      "১. তানভীর : +8801403520600",
       "২. রাহুল  : +8801737292829",
       "৩. রুহান  : +8801734971527",
       "৪. জরুরি সেবা: 01761427351"
