@@ -65,8 +65,6 @@ async function getLiveCounters(): Promise<LiveCounters> {
 // ── Sub-components (server-renderable, inline) ────────────────────────────────
 
 function Navbar({
-  settings,
-}: {
   settings: SettingsMap;
 }) {
   return (
@@ -183,8 +181,8 @@ function Hero({ settings }: { settings: SettingsMap }) {
   onClick={() => {
     const list = [
       "১. তানভীর : +8801403520600",
-      "২. রাহুল  : +8801737292829",
-      "৩. রুহান  : +8801734971527",
+      "২. রাহুল : +8801737292829",
+      "৩. রুহান : +8801734971527",
       "৪. জরুরি সেবা: 01761427351"
     ];
     alert("জরুরি প্রয়োজনে কল করুন:\n\n" + list.join("\n"));
